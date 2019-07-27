@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+      
+        var options = ["rock","paper","scissors"];
+        while(true) {
+        var playerOne = prompt("Please choose one of the following. rock, paper, scissor");
+        cpu = options[Math.floor(Math.random() * 3)];
+        console.log(cpu);  
+        if((playerOne === 'rock') && (cpu === 'scissors')) {
+            console.log("Player One wins the round");
+        }else if((playerOne === 'paper') && (cpu === "rock")) {
+            console.log("Player One wins the round");
+        }else if((playerOne === "scissors") && (cpu === "paper")) {
+            console.log("Player One wins the round");
+        }else if(playerOne === cpu) {
+            console.log("A tie took place");
+        }else if((cpu === 'rock') && (playerOne === 'scissors')) {
+            console.log("CPU wins the round");
+        }else if((cpu === "paper") && (playerOne === 'rock')) {
+            console.log("CPU wins the round");
+        }else if((cpu === "scissors") && (playerOne === 'paper')) {
+            console.log("CPU wins the round");
+        }
+        }
+    
+    </script>
+</body>
+</html>
