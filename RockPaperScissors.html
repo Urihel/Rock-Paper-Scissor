@@ -15,19 +15,19 @@
         var playerOne = prompt("Please choose one of the following. rock, paper, scissor");
         cpu = options[Math.floor(Math.random() * 3)];
         console.log(cpu);  
-        if((playerOne === 'rock') && (cpu === 'scissors')) {
+        if((playerOne === options[0]) && (cpu === options[2])) {
             console.log("Player One wins the round");
-        }else if((playerOne === 'paper') && (cpu === "rock")) {
+        }else if((playerOne === options[1]) && (cpu === options[0])) {
             console.log("Player One wins the round");
-        }else if((playerOne === "scissors") && (cpu === "paper")) {
+        }else if((playerOne === options[2]) && (cpu === options[1])) {
             console.log("Player One wins the round");
         }else if(playerOne === cpu) {
             console.log("A tie took place");
-        }else if((cpu === 'rock') && (playerOne === 'scissors')) {
+        }else if((cpu === options[0]) && (playerOne === options[2])) {
             console.log("CPU wins the round");
-        }else if((cpu === "paper") && (playerOne === 'rock')) {
+        }else if((cpu === options[1]) && (playerOne === options[0])) {
             console.log("CPU wins the round");
-        }else if((cpu === "scissors") && (playerOne === 'paper')) {
+        }else if((cpu === options[2]) && (playerOne === options[1])) {
             console.log("CPU wins the round");
         }
         }
